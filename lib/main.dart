@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/pages/home_page.dart';
+import 'package:flutter_demo/cfg/route.dart';
 
 void main() => runApp(new App());
 
@@ -12,7 +12,8 @@ class App extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.yellow,
       ),
-      home: HomePage(title: 'Home'),
+      initialRoute: '/',
+      routes: routes,
     );
   }
 }
